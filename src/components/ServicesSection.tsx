@@ -17,21 +17,21 @@ const services: {
     description:
       "Developing reliable mobile applications built for performance and growth.",
     icon: MobileProgramming01Icon,
-    link: "#",
+    link: "/services/mobile-development",
   },
   {
     title: "Web Development",
     description:
       "Building fast, secure, and scalable web solutions tailored to real business needs.",
     icon: WebDesign02Icon,
-    link: "#",
+    link: "/services/web-development",
   },
   {
     title: "UI/UX design",
     description:
       "Designing intuitive, user-focused interfaces that look clean and work effortlessly.",
     icon: WebDesign01Icon,
-    link: "#",
+    link: "/services/ui-ux",
   },
 ];
 export default function ServicesSection() {

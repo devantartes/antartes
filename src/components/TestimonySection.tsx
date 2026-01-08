@@ -27,7 +27,7 @@ const testimonials: {
 
 export default function TestimonySection() {
   return (
-    <div className="py-20 px-20">
+    <div className="py-20 px-20" id="testimony-section">
       <h1 className="text-4xl md:text-5xl font-bold font-poppins leading-tight">
         Testimonials
       </h1>

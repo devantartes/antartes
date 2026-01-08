@@ -6,13 +6,17 @@
   --font-raleway: "Raleway", sans-serif;
   --font-poppins: "Poppins", sans-serif;
   --color-primary: #7ffbae;
-  --color-body-bg: #eae7e7;
+  --color-body: #eae7e7;
+}
+
+body {
+  @apply font-poppins bg-body;
 }
 
 .nav-active {
   @apply text-primary;
 }
 
-body {
-  @apply font-poppins bg-body-bg;
+.main-footer a {
+  @apply transition-all duration-300 hover:text-shadow-[0_0_15px_#7ffbae];
 }

@@ -10,10 +10,10 @@ export default function FaqAccordion({
   const [isOpen, setIsOpen] = useState(false);
   return (
     <button
-      className="border-b border-black/7 w-full text-start"
-      onClick={() => setIsOpen(prev => !prev)}
+      className="border-b border-black/7 w-full text-start p-3"
+      onClick={() => setIsOpen((prev) => !prev)}
     >
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between gap-x-5">
         <h3 className="text-2xl">{faq.question}</h3>
         {isOpen ? (
           <HugeiconsIcon icon={MinusSignIcon} />

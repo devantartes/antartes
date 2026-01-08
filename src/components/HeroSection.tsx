@@ -29,7 +29,7 @@ export default function HeroSection() {
             <img
               src={getStartedImg}
               alt="get-started-img"
-              className="relative left-[calc(100%-50px)]"
+              className="relative left-[calc(100%-60px)]"
               draggable={false}
             />
           </div>

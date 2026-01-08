@@ -5,16 +5,30 @@ import {
   NewTwitterIcon,
 } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 export default function Footer() {
+  const { pathname } = useLocation();
+  const navigate = useNavigate();
+
+  const scrollToSection = async (e: React.MouseEvent, id: string) => {
+    e.preventDefault();
+    if (pathname !== "/") {
+      await navigate("/");
+    }
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+    await navigate("/#" + id);
+  };
   return (
-    <footer className="w-full h-[470px] bg-primary/20 flex flex-col items-center justify-center">
-      <div className="flex items-center justify-center w-[90%] border-b border-gray-500 pb-10">
-        <div className="flex w-full items-center justify-between">
+    <footer className="w-full pt-10 md:pt-0 md:h-[570px] bg-black text-primary  flex flex-col items-center justify-end md:-mt-55 pb-10 main-footer">
+      <div className="flex items-center justify-center w-[90%] pb-10">
+        <div className="flex w-full justify-between md:flex-row flex-col gap-y-10 md:gap-y-0">
           <div>
-            <h2 className="text-[20px] font-bold text-[#5B5B5B]">Antartes</h2>
-            <p className="text-[#5B5B5B] font-normal text-[15px] mt-5">
+            <h2 className="text-[20px] font-bold text-white">Antartes</h2>
+            <p className="text-primary font-normal text-[15px] mt-5">
               We build custom software solutions that <br /> bring your ideas to
               life
             </p>
@@ -36,72 +50,71 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-col">
-            <h3 className="text-[20px] font-bold">Home</h3>
-            <ul className="flex flex-col mt-5">
+            <h3 className="text-[20px] font-bold text-white">Home</h3>
+            <ul className="flex flex-col mt-5 text-[14px] space-y-2">
               <li>
-                <Link to="#">About</Link>
+                <Link
+                  to="/#services-section"
+                  onClick={(e) => scrollToSection(e, "services-section")}
+                >
+                  Services
+                </Link>
               </li>
               <li>
-                <Link to="#">Case Studies</Link>
+                <Link
+                  to="/#cases-section"
+                  onClick={(e) => scrollToSection(e, "cases-section")}
+                >
+                  Case Studies
+                </Link>
               </li>
               <li>
-                <Link to="#">Our Projects</Link>
+                <Link
+                  to="/#testimony-section"
+                  onClick={(e) => scrollToSection(e, "testimony-section")}
+                >
+                  Testimonials
+                </Link>
               </li>
               <li>
-                <Link to="#">Blogs</Link>
+                <Link
+                  to="/#faq-section"
+                  onClick={(e) => scrollToSection(e, "faq-section")}
+                >
+                  FAQs
+                </Link>
               </li>
             </ul>
           </div>
           <div className="flex flex-col">
-            <h3 className="text-[20px] font-bold">About</h3>
-            <ul className="flex flex-col mt-5">
+            <h3 className="text-[20px] font-bold text-white">Services</h3>
+            <ul className="flex flex-col mt-5 text-[14px] space-y-2">
               <li>
-                <Link to="#">About</Link>
+                <Link to="/services/ui-ux">UI/UX Design</Link>
               </li>
               <li>
-                <Link to="#">Case Studies</Link>
+                <Link to="/services/web-development">Web Development</Link>
               </li>
               <li>
-                <Link to="#">Our Projects</Link>
-              </li>
-              <li>
-                <Link to="#">Blogs</Link>
+                <Link to="/services/mobile-development">
+                  Mobile App Development
+                </Link>
               </li>
             </ul>
           </div>
           <div className="flex flex-col">
-            <h3 className="text-[20px] font-bold">Services</h3>
-            <ul className="flex flex-col mt-5">
+            <h3 className="text-[20px] font-bold text-white">About</h3>
+            <ul className="flex flex-col mt-5 text-[14px] space-y-2">
               <li>
-                <Link to="#">SEO</Link>
+                <Link to="#">Contact us</Link>
               </li>
-              <li>
-                <Link to="#">Project Manager</Link>
-              </li>
-              <li>
-                <Link to="#">Social Media</Link>
-              </li>
-              <li>
-                <Link to="#">See All</Link>
-              </li>
-            </ul>
-          </div>
-          <div className="flex flex-col">
-            <h3 className="text-[20px] font-bold">For Companies</h3>
-            <ul className="flex flex-col mt-5">
-              <li className="text-[#5B5B5B] font-normal text-[20px]">
-                Work with us
-              </li>
-              <li>Contact us</li>
-              <li>Contact us</li>
-              <li>Contact us</li>
             </ul>
           </div>
         </div>
       </div>
 
-      <p className="text-[#5B5B5B] font-normal text-[15px] mt-10">
-        © 2026 Antartes. All rights reserved.
+      <p className="text-primary font-normal text-[15px] mt-10">
+        Copyright © {new Date().getFullYear()}. Antartes. All Right Reserved.
       </p>
     </footer>
   );

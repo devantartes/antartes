@@ -8,7 +8,6 @@ export default function Layout() {
       <Header />
       <Outlet />
       <Footer/>
-      {/* Add footer here */}
     </>
   );
 }
