@@ -8,12 +8,12 @@ import ServiceDevelopmentProcess from "../../components/ServiceDevelopmentProces
 export default function WebService() {
   return (
     <main>
-      <div className="absolute top-0 bg-black w-full h-[80vh] -z-1">
+      <div className="absolute -top-20  w-full z-0">
         <div className="flex w-full justify-center">
           <img src={ellipseGlow} alt="header-ellipse" draggable={false} />
         </div>
       </div>
-      <div className=" px-20 text-white py-20 mt-20 text-center">
+      <div className=" px-20 text-white py-20 bg-black pt-40 text-center z-10">
         <h1 className="text-4xl font-bold">Web Development</h1>
         <p className="md:w-[70%] mx-auto mt-5 mb-20">
           We design and build fast, secure, and scalable web applications that

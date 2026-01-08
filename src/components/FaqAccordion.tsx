@@ -10,7 +10,7 @@ export default function FaqAccordion({
   const [isOpen, setIsOpen] = useState(false);
   return (
     <button
-      className="border-b border-black/7 w-full text-start p-3"
+      className="border-b border-black/7 w-full text-start p-3 cursor-pointer"
       onClick={() => setIsOpen((prev) => !prev)}
     >
       <div className="flex items-center justify-between gap-x-5">

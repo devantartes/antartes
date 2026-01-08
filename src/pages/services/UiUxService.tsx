@@ -7,12 +7,12 @@ import { Check } from "@hugeicons/core-free-icons";
 export default function UiUxService() {
   return (
     <main>
-      <div className="absolute top-0 bg-black w-full h-[80vh] -z-1">
+      <div className="absolute -top-20  w-full z-0">
         <div className="flex w-full justify-center">
           <img src={ellipseGlow} alt="header-ellipse" draggable={false} />
         </div>
       </div>
-      <div className=" px-20 text-white py-20 mt-20 text-center">
+      <div className=" px-20 text-white py-20 bg-black pt-40 text-center z-10">
         <h1 className="text-4xl font-bold">UI/UX design</h1>
         <p className="md:w-[70%] mx-auto mt-5 mb-20">
           At Antartes, we design user interfaces and experiences that make

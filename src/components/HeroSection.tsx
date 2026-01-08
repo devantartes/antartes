@@ -11,7 +11,7 @@ export default function HeroSection() {
         className="absolute top-0 right-0 pe-20 z-1"
         draggable={false}
       />
-      <div className="flex items-center justify-between px-20 text-white py-20 mt-20">
+      <div className="flex items-center justify-between px-20 bg-black text-white py-20 pt-40 z-10">
         <div className="w-[50%] space-y-5">
           <h1 className="text-4xl font-bold font-poppins">
             Building Digital Solutions That Actually Work.

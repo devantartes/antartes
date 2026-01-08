@@ -1,4 +1,3 @@
-import ellipseGlow from "../assets/image/ellipse-glow.png";
 import ClientGeographySection from "../components/ClientGeographySection";
 import FaqsSection from "../components/FaqsSection";
 import GetStartedSection from "../components/GetStartedSection";
@@ -6,6 +5,7 @@ import HeroSection from "../components/HeroSection";
 import ServicesSection from "../components/ServicesSection";
 import CasesSection from "../components/CaseStudiesSection";
 import TestimonySection from "../components/TestimonySection";
+import ellipseGlow from "../assets/image/ellipse-glow.png";
 
 const faqs: { question: string; answer: string }[] = [
   {
@@ -42,7 +42,7 @@ const faqs: { question: string; answer: string }[] = [
 export default function Home() {
   return (
     <main id="home">
-      <div className="absolute top-0 bg-black w-full h-[80vh] -z-1">
+      <div className="absolute -top-20 w-full z-0">
         <div className="flex w-full justify-center">
           <img src={ellipseGlow} alt="header-ellipse" draggable={false} />
         </div>
