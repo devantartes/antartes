@@ -8,7 +8,7 @@ export default function FaqsSection({
   faqs: { question: string; answer: string }[];
 }) {
   return (
-    <div className="px-20 py-20" id="faq-section">
+    <div className="md:px-20 md:py-20 px-10 py-10" id="faq-section">
       <h1 className="text-4xl md:text-5xl font-bold font-poppins leading-tight">
         Frequently Asked Questions
       </h1>

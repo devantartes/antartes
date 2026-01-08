@@ -13,7 +13,7 @@ export default function MobileService() {
           <img src={ellipseGlow} alt="header-ellipse" draggable={false} />
         </div>
       </div>
-      <div className=" px-20 text-white py-20 bg-black pt-40 text-center z-10">
+      <div className="mmd:px-20 md:py-20 px-10 py-10 text-white bg-black pt-40 text-center z-10">
         <h1 className="text-4xl font-bold">Mobile App Development</h1>
         <p className="md:w-[70%] mx-auto mt-5 mb-20">
           We design and build high-performance mobile applications that are
@@ -24,7 +24,7 @@ export default function MobileService() {
 
         <ButtonBG className="mx-auto">Get Started</ButtonBG>
       </div>
-      <div className="px-20 py-20 space-y-20">
+      <div className="md:px-20 md:py-20 px-10 py-10 space-y-20">
         <div className="flex items-center justify-between flex-col md:flex-row-reverse gap-10 gap-x-30">
           <div>
             <h1 className="text-3xl font-bold">1. What’s Included</h1>
@@ -1565,7 +1565,7 @@ export default function MobileService() {
         </div>
       </div>
       <ServiceDevelopmentProcess />
-      <div className="px-20 py-20 text-center">
+      <div className="md:px-20 md:py-20 px-10 py-10 text-center">
         <h1 className="text-3xl font-bold mb-3">Why Antartes</h1>
         <p className="text-black/60">
           Each step is carefully managed to ensure strong performance, secure

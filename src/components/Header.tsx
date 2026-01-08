@@ -25,6 +25,8 @@ export default function Header() {
   }, [pathname]);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setIsNavOpen(false)
     if (!hash) return;
     const element = document.querySelector(hash);
     if (element) {

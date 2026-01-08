@@ -3,12 +3,11 @@ export default function ClientGeographySection() {
   return (
     <div
       id="about-section"
-      className="px-20 py-20 bg-black text-white flex items-center justify-center gap-y-20 md:gap-y-0 md:gap-x-20 flex-col-reverse md:flex-row "
+      className="md:px-20 md:py-20 px-10 py-10 bg-black text-white flex items-center justify-center gap-y-20 md:gap-y-0 md:gap-x-20 flex-col-reverse md:flex-row "
     >
       <div className="hover:scale-[1.1] transition-all duration-300">
         <svg
-          width="539"
-          height="381"
+          className="md:w-[539px] md:h-[381px] w-[439px] h-[281px]"
           viewBox="0 0 539 381"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"

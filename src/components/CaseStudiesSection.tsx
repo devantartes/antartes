@@ -47,8 +47,8 @@ const caseStudies: {
 ];
 export default function CasesSection() {
   return (
-    <div className="py-20" id="cases-section">
-      <div className="px-20 mb-12">
+    <div className="md:py-20 py-10" id="cases-section">
+      <div className="md:px-20 px-10 mb-12">
         <h1 className="text-4xl md:text-5xl font-bold font-poppins leading-tight">
           Cases Studies
         </h1>

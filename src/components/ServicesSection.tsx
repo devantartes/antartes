@@ -36,7 +36,7 @@ const services: {
 ];
 export default function ServicesSection() {
   return (
-    <div className="py-20 px-20" id="services-section">
+    <div className="md:py-20 md:px-20 py-10 px-10" id="services-section">
       <h2 className="text-4xl md:text-5xl font-bold font-poppins leading-tight">
         Our Services
       </h2>

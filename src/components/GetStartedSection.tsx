@@ -4,7 +4,7 @@ import getStartedImg from "../assets/image/get-started-img.png";
 export default function GetStartedSection() {
   return (
     <>
-      <div className="mx-20 mb-20 md:px-20 px-10 py-10 bg-black  relative rounded-4xl flex flex-col overflow-hidden border border-body">
+      <div className="md:mx-20 mx-10 mb-20 md:px-20 px-10 py-10 bg-black  relative rounded-4xl flex flex-col overflow-hidden border border-body">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="625"
