@@ -13,7 +13,7 @@ export default function MobileService() {
           <img src={ellipseGlow} alt="header-ellipse" draggable={false} />
         </div>
       </div>
-      <div className="mmd:px-20 md:py-20 px-10 py-10 text-white bg-black pt-40 text-center z-10">
+      <div className="mmd:px-20 md:py-20 px-10 py-10 text-white bg-black pt-30! md:pt-40! text-center z-10">
         <h1 className="text-4xl font-bold">Mobile App Development</h1>
         <p className="md:w-[70%] mx-auto mt-5 mb-20">
           We design and build high-performance mobile applications that are

@@ -12,7 +12,7 @@ export default function UiUxService() {
           <img src={ellipseGlow} alt="header-ellipse" draggable={false} />
         </div>
       </div>
-      <div className="md:px-20 px-10 text-white md:py-20 py-10 bg-black pt-40 text-center z-10">
+      <div className="md:px-20 px-10 text-white md:py-20 py-10 bg-black pt-30! md:pt-40! text-center z-10">
         <h1 className="text-4xl font-bold">UI/UX design</h1>
         <p className="md:w-[70%] mx-auto mt-5 mb-20">
           At Antartes, we design user interfaces and experiences that make

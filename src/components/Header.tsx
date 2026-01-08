@@ -26,7 +26,7 @@ export default function Header() {
 
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect
-    setIsNavOpen(false)
+    setIsNavOpen(false);
     if (!hash) return;
     const element = document.querySelector(hash);
     if (element) {
@@ -66,19 +66,21 @@ export default function Header() {
       }`}
     >
       <div
-        className={`flex items-center justify-between transition-all duration-300 ${
+        className={`flex items-center justify-between  transition-all duration-300 ${
           isScrolled
-            ? "bg-black/80 backdrop-blur-md rounded-full px-10 py-4 w-full gap-20 shadow-lg border border-white/10"
+            ? "bg-black/80 backdrop-blur-md rounded-full px-10 py-4  md:w-fit gap-20 shadow-lg border border-white/10"
             : "px-20 py-10 w-full"
-        }`}
+        }
+        ${isNavOpen && isScrolled ? "w-full" : "w-[calc(100%-60px)]"}    
+        `}
       >
         <Link to="/" className="text-3xl font-raleway font-bold text-white">
           Antartes
         </Link>
         <nav
           className={`${
-            isNavOpen ? "translate-x-0 px-15 py-10" : "translate-x-full"
-          } md:translate-x-0 transition-all duration-300 fixed right-0 top-0 z-9999 w-screen bg-black h-screen md:px-0 md:py-0 md:bg-[unset] md:static md:z-0 md:h-[unset] md:w-[unset]`}
+            isNavOpen ? "translate-x-[unset] px-15 py-10" : "translate-x-[150%]"
+          } md:translate-x-0! transition-all duration-300 fixed right-0 top-0 z-9999999 w-screen bg-black h-screen md:px-0 md:py-0 md:bg-[unset] md:static md:z-0 md:h-[unset] md:w-[unset]`}
         >
           <ul className="flex md:flex-row flex-col gap-10 text-white">
             <li className="text-end md:hidden">
