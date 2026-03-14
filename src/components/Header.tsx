@@ -17,7 +17,6 @@ export default function Header() {
     };
 
     window.addEventListener("scroll", handleScroll);
-    // initially check if the user has scrolled
     handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -26,7 +25,6 @@ export default function Header() {
   }, [pathname]);
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/set-state-in-effect
     setIsNavOpen(false);
     if (!hash) return;
     const element = document.querySelector(hash);
@@ -140,6 +138,13 @@ export default function Header() {
                 // onClick={(e) => scrollToSection(e, "about-section")}
               >
                 About
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/pricing"
+              >
+                Pricing
               </Link>
             </li>
             <li className="md:hidden">

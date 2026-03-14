@@ -1,4 +1,6 @@
 import { ButtonBG } from "./ui/button";
+import { Link} from "react-router-dom";
+
 export default function ClientGeographySection() {
   return (
     <div
@@ -183,7 +185,11 @@ export default function ClientGeographySection() {
             <p className="text-[14px]">Local Clients</p>
           </div>
         </div>
+        
+        <Link to="/Pricing">
         <ButtonBG className="mt-5">Request a service</ButtonBG>
+      
+        </Link>
       </div>
     </div>
   );

@@ -8,6 +8,7 @@ import MobileService from "./pages/services/MobileService";
 import WebService from "./pages/services/WebService";
 import GetStarted from "./pages/GetStarted";
 import About from "./pages/About";
+import Pricing from "./pages/Pricing"
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="mobile-development" element={<MobileService />} />
             <Route path="web-development" element={<WebService />}  />
           </Route>
+            <Route path="/pricing" element={<Pricing/>}  />
           <Route path="get-started" element={<GetStarted />} />
           <Route path="about" element={<About />} />
         </Route>
